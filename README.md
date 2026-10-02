@@ -2,12 +2,15 @@
 
 Small automation scripts for PostgreSQL administration and health checks.
 
-## Planned scripts
+## Scripts
 
 - replication lag check
-- WAL usage check
 - long-running transaction check
 - blocking session check
+
+## Planned
+
+- WAL usage check
 - connection usage check
 - database size check
 - backup status check
@@ -19,8 +22,24 @@ Small automation scripts for PostgreSQL administration and health checks.
 - Python
 - Bash
 
+## Usage
+
+Install dependencies:
+
+'pip install -r requirements.txt'
+
+Set PostgreSQL connection variables:
+
+'PGHOST'
+'PGPORT'
+'PGDATABASE'
+'PGUSER'
+'PGPASSWORD'
+
+Run a script:
+
+'python check_replication_lag.py'
+
 ## Goal
 
 Automate repetitive PostgreSQL checks and turn manual DBA tasks into simple reusable scripts.
-
-This repo will grow as I move more daily checks and troubleshooting steps into automation.
